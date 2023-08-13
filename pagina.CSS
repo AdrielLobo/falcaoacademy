@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+body{
+	background-color: white
+	color:rgba(0, 0, 0, 1);
+}
+p{
+ text-aling:justify
+ text-indent:50px
+}
+
+ /* formatação de imagem */
+		
+	 figure.foto-lgenda{
+	    position:relative;
+		border:8px solid white ;
+		text-shadow: 5px 5px 10px black;
+	}
+	  figure.foto-lgenda img {
+		width: 100%;
+		height: 100%;
+	
+	}	
+	figure.foto-lgenda figcaption {
+      opacity:0;
+      position: absolute;
+      top: 0px;
+      background-color: rgba(0, 0, 0,.4);
+      color: white;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      transition: opacity 1s;
+	}
+	figure.foto-lgenda:hover figcaption{
+        opacity: 1;
+	}
+	
+/*formatação menu*/
+nav#menu{
+	display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top:0px;
+    left: 100px;
+}
+nav#menu li {
+	 display: inline-block;
+	 padding: 10px;
+	 margin: 20px;
+
+}
